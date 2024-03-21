@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+    <div class="container">
+        <h1>Tem certeza que deseja excluir o Aluno: {{aluno.nome}} ?</h1>
+   
+        <form action="." method="POST">
+            {% csrf_token %}
+            <a href="/" class="cancel">Cancelar</a>
+            <button type="submit" class="confirmar">Confirmar</button>
+        </form>
+    </div>
+    <style>
+        .container {
+        text-align: center;
+         }
+
+    /* Estilo para os botões */
+        .cancel, .confirmar {
+        background-color: rgb(23, 149, 233);
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block; /* Torna os botões blocos (um abaixo do outro) */
+        margin: 10px auto; /* Margem para centralizar verticalmente */
+        transition-duration: 0.4s;
+         }
+
+        .cancel:hover, .confirmar:hover {
+        background-color: black;
+        cursor: pointer;
+        }
+
+    /* Estilo específico para o botão 'Confirmar' */
+        .confirmar {
+        margin-top: 20px; /* Margem superior maior para separação */
+     }
+     
+    </style>
+{% endblock %}

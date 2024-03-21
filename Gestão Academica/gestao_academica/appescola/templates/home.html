@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+{% load static %}
+
+    {% if request.user.is_staff %}
+
+    <div>
+        {% if request.user.is_staff %}
+        <a class ='new2' href="{% url 'add_aluno' %}">Novo Aluno</a>
+        {% endif %}
+    </div>
+    
+    <table>
+
+        <tr class="info">
+            <td>R.A</td>
+            <td>Aluno</td>
+            <td>Nascimento</td>
+            <td>Email</td>
+            <td>Celular</td>
+            <td>Curso</td>
+            <td>Ações</td>
+        </tr>
+        
+        {% for aluno in alunos %}
+        
+        <tr class="content">
+            <td>{{aluno.matricula}}</td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.nascimento}}</td>
+            <td>{{aluno.email}}</td>
+            <td>{{aluno.celular}}</td>
+            <td>{{aluno.curso}}</td>
+            <td><a href="{% url 'editar' aluno.id %}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABrklEQVR4nO3WsUrDUBQG4IDuUs+JOooODro66OYijoKLu6Mv4Auoi7iIg4K2ntMuToKDIoKIID6AoghSRAdLzmlroTqVym2Jlta0aXurDv5wl0Dulz+5N4nj/Ocvxo1lh5FkE0jvgTUPJB6SHgB7Ix1DgbxZYH1H1mL1ANIXIG9xYCfnWm8KrPnv0Krx7EZTA9ZgZN0Igfrtl+3BpHdhYWS5tgZDwLMNGDmbcOqXYDkKDZOe2oNJDsMvLjm0BiPrcxONn6zBwLoeHpY1x2aQ9DQEfOLYjks60wjuZZl2OhEkWQ1cVJxe6gjqJwh2Oh1sEe6PZgaR9QpZMkiy0BTqkszV2Ubz9c6NxHT08w1Ikm6s7Re7IO5NIUkCWQp1Pg4FZImbReicFbsrmxq0hJOOlXG5DL7CPZ0A1t3SX0b497Rp/grsjfsosCQNZlC/uTleA5q/CGA5bgqrQM0FV6Jfq15TfvOa9CSyESB5sI2WYUl+29QEWVd+HDVB0ptmUSB9c0knW0ZNzCQtNN5oC203QLJdtb0e+xLZobYndhrBLBc/jpog6S2QnCPLVpjb+wGIWWeQMh4hTgAAAABJRU5ErkJggg==">
+            </a> / <a href="{% url 'delete' aluno.id %}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAiklEQVR4nO2UwQmAMAxFvxfncARdUpeyJ3ETHaH0GCnEg6VisK2i5MM/lIS8pKQFrtUAMAAcAArsOOZzkmUiAAo8pkIqAJaLtZF4xzHLuWLNgu6lns4gVMjvgR4XPTUJ/R60S3omBZFeHXQZoO/oa8tApT7VNQNkkYCGDKBeAqoZdmcyP4mH+BoHbXvrXW5mYPgbAAAAAElFTkSuQmCC"></a> /
+            <a href="{% url 'notas' aluno.id %}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAElEQVR4nO2XTQrCMBBG36rHKEHceQLrBfQA3sOtrtxY9XpS0I2I2nqNSmEKg/jThCQg9IMPyiQzj5lkkYK9EmAPPIAK2EosuHZA/eI8BrgSWAZM5LuJeVGixll/8ESB39npGHZfCto6dxnnWMXuHSA3tT9zOYZarDX7AW+g0w51vso6wVedugf/kAEK4AQMY456oXKOMcBG3GgtOYfQYANcxEZ1bkKCU+Cs9l2BgWMDnRNeoVHAqQXUGzi1hHoDj+QitWv6UgUFN5q/uclBwSsFGnWEegEXwNKmgC+wq/4HXKmXpKvah2Bpk7T1+Njb2IATgbedu7gUaJS/jF580hMKHdoyv1Z5mgAAAABJRU5ErkJggg==">
+            </a></td>
+            
+        </tr>
+        {% endfor r%}
+    </table>
+
+
+    {% else %}
+    <div class="inicio">
+        <h1>BEM VINDO AO SISTEMA ACADEMICO</h1>
+        <a class="imagem" href="/">
+        <img src="{% static 'imgs/imagem.jpg' %}" alt="foto fundo">
+        </a>
+        <H2>Faça <a href="{% url 'login' %}">Login</a>  ou <a href="{% url 'signup' %}">Registre-se</a> para Continuar</H2>
+    </div>       
+    {% endif %}
+        
+{% endblock %}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="edit">
+    <h1>Editar Aluno</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="matricula">Matricula:</label><br>
+        <input value={{aluno.matricula}} type="text" id="matricula" name="matricula" value="{% if post %}{{ post.matricula }}{% endif %}"><br>
+        <label for="nome">Nome:</label><br>
+        <input value={{aluno.nome}} type="text" id="nome" name="nome" value="{% if post %}{{ post.nome }}{% endif %}"><br>
+        <label for="nascimento">Nascimento:</label><br>
+        <input value={{aluno.nascimento}} type="text" id="nascimento" name="nascimento" value="{% if post %}{{ post.nascimento }}{% endif %}"><br>
+        <label for="email">Email:</label><br>
+        <input value={{aluno.email}} type="text" id="email" name="email" value="{% if post %}{{ post.email }}{% endif %}"><br>
+        <label for="celular">Celular:</label><br>
+        <input value="{{aluno.celular}}" type="text" id="celular" name="celular"><br>
+        <label for="curso">Curso:</label><br>
+        <input value={{aluno.curso}} type="text" id="curso" name="curso" value="{% if post %}{{ post.curso }}{% endif %}"><br>
+        <a class="cancel" href="/">Cancelar</a>
+        <button type="submit" value="submit">Confirmar</button>
+    </form>
+</div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .edit {
+        display: grid;
+        place-items: center;
+        place-content: center;
+        background-color: #e6e6e6;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #154c79;
+        height: 525px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+</style>
+</body>
+</html>

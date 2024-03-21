@@ -1,0 +1,41 @@
+<div class="login">
+    <h1>Login</h1>
+    <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+    <a href="{% url 'signup' %}"> Cadastre-se</a>
+    </form>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .login {
+        display: grid;
+        place-items: center;
+        place-content: center;
+        background-color: #e6e6e6;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #154C79;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    form a {
+        color: white;
+    }
+</style>

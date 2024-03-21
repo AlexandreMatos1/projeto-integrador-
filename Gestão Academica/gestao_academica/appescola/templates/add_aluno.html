@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="novo">
+    <h1>{% if post %}Edit Aluno{% else %}Novo Aluno{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" value="{% if post %}{{ post.nome }}{% endif %}"><br>
+        <label for="nascimento">Nascimento:</label><br>
+        <input type="text" id="nascimento" name="nascimento" value="{% if post %}{{ post.nascimento }}{% endif %}"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="{% if post %}{{ post.email }}{% endif %}"><br>
+        <label for="celular">Celular:</label><br>
+        <input type="text" id="celular" name="celular" value="{% if post %}{{ post.celular }}{% endif %}"><br>
+        <label for="curso">Curso:</label><br>
+        <input type="text" id="curso" name="curso" value="{% if post %}{{ post.curso }}{% endif %}"><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
+<style>
+
+    .novo {
+        display: grid;
+        place-items: center;
+        place-content: center;
+        background-color: #e6e6e6;
+        top: 20px;
+        right: 20px;
+    }
+
+    form {
+        background-color: #154c79;
+        height: 525px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .novo label {
+        color: black;
+    }
+
+</style>
+    
+</body>
+</html>
+    

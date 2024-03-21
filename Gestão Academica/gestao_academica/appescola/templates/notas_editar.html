@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+
+<div class="editnotas">
+    <h1>Editar Notas</h1>
+    <form class="editnot" method="post">
+        {% csrf_token %}
+        <label for="nota1">Nota 1:</label><br>
+        <input value={{nota.nota1}} type="text" id="nota1" name="nota1" value="{% if post %}{{ post.nota1 }}{% endif %}"><br>
+        <label for="nota2">Nota 2:</label><br>
+        <input value={{nota.nota2}} type="text" id="nota2" name="nota2" value="{% if post %}{{ post.nota2 }}{% endif %}"><br>
+        <label for="nota3">Nota 3:</label><br>
+        <input value={{nota.nota3}} type="text" id="nota3" name="nota3" value="{% if post %}{{ post.nota3 }}{% endif %}"><br>
+        <button type="submit" value="submit">Confirmar</button>
+    </form>
+</div>
+
+{% endblock %}
+

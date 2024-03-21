@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    padding: 5px 2px;
+    margin: 90px 90px;
+    width: 86%;
+    border: 1px solid #444;
+
+}
+
+.info{
+    background-color: rgb(28, 140, 231);
+    color: white;
+}
+
+.info td {
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.content {
+    background-color: rgb(228, 225, 225);
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(28, 140, 231);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+header nav {
+    display: inline-flex;
+    gap: 15px;
+    font-weight: bolder;
+}
+
+header nav a {
+    color: white;
+    text-align: center; 
+}
+
+header img {
+    height: 50px;
+}
+
+.new2 {
+    position: absolute;
+    top:19%;
+    left: 11%;
+    transform: translate(-50%,-50%);
+    transition-duration: 0.4s;
+    background-color: rgb(23, 149, 233);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.editnotas {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background-color: #e6e6e6;
+    height: 100vh;
+}
+
+.editnot {
+    background-color: #154c79;
+    height: 525px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.inicio {
+  text-align: center;
+  padding: 20px;
+}
+
+.inicio > * {
+    margin-bottom: 30px;
+  }

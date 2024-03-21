@@ -1,0 +1,53 @@
+<!-- notas_aluno.html -->
+{% extends 'home.html' %}
+
+{% block conteudo %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas do Aluno</title>
+</head>
+<body>
+    <div class="">
+        <h1 class="alunos">Notas do Aluno(a): {{aluno}}</h1>
+
+        <table>
+
+            <tr class="info">
+                <td>Nota 1</td>
+                <td>Nota 2</td>
+                <td>Nota 3</td>
+                <td>Editar</td>
+            </tr>
+
+            {% for nota in notas %}
+            
+            <tr class ="content">
+                <td>{{ nota.nota1 }}</td>
+                <td>{{ nota.nota2 }}</td>
+                <td>{{ nota.nota3 }}</td>
+                <td><a href="{% url 'notas_aluno' aluno.id %}">Editar Notas</a></td>
+            </tr>
+            {% endfor %}
+               
+        </table>
+      <style>
+        .alunos{
+        position: absolute;
+        top:19%;
+        left: 16%;
+        transform: translate(-50%,-50%);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        }
+      </style>
+    
+    </div>
+</body>
+</html>
+
+{% endblock %}

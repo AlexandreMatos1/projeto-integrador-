@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>AppEscolar</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <a class="logo" href="/">
+                <img src="{% static 'imgs/Logoapp.jpeg' %}" alt="Foto do App">
+            </a>
+
+            <nav>
+                {% if request.user.is_authenticated %}
+                <a>Olá, {{ request.user.username}}</a>
+                <a href="{% url 'logout' %}">Sair</a>
+                
+
+                {% else %}
+    
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'signup' %}">Registre-se</a>
+
+                {% endif %}
+        
+                <!-- <a href="">Sobre</a> -->
+              
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                {% block conteudo %}
+
+                {% endblock %}
+            </section>
+        </main>
+
+    </div>
+<style>
+   
+</style>
+</body>
+</html>
