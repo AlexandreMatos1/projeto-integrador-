@@ -23,4 +23,9 @@ O sistema permite o cadastro de novos alunos, a verificação de suas informaç�
 - `Funcionalidade 3`: Deletar Aluno
 - `Funcionalidade 4`: Ver Notas do Aluno
 
+# ✔️ Tecnologias Utilizadas
+- `Django`
+- `HTML`
+- `CSS`
+
 
