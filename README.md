@@ -9,3 +9,11 @@
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
+
+# Descrição do Projeto
+
+Projeto desenvolvido como objetivo final do curso de Python da CyberEdux. O appEscolar é um sistema dedicado a auxiliar o Professor no gerenciamento das informações dos alunos cadastrados.
+
+O sistema permite o cadastro de novos alunos, a verificação de suas informações, tais como: email, data de nascimento, telefone e o curso em que está cadastrado. Assim como tambem é possivel editar suas notas e suas informações.
+
+#Funcionalidades e demonstração da aplicação
