@@ -23,9 +23,14 @@ O sistema permite o cadastro de novos alunos, a verificação de suas informaç�
 - `Funcionalidade 3`: Deletar Aluno
 - `Funcionalidade 4`: Ver Notas do Aluno
 
-# ✔️ Tecnologias Utilizadas
+# ✔️ Tecnologias utilizadas
 - `Django`
 - `HTML`
 - `CSS`
+
+# Pessoas Desenvolvedoras do Projeto
+![<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Alexandre Matos</sub>](https://github.com/AlexandreMatos1/projeto-integrador-/assets/152565845/1c3c7fd8-bae4-4040-a0ca-4a8659ad21d7)
+
+
 
 
