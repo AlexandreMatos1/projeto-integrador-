@@ -14,11 +14,11 @@ Este projeto está aberto ao publico que possa me ajudar a melhorar meu codigo e
 
 ![image](https://github.com/AlexandreMatos1/projeto-integrador-/assets/152565845/46031251-fc35-483f-a241-a1562b28f7c3)
 
-4 Passo - Escrever um novo para o repertorio e clicar em implementar:
+4 Passo - Escrever um nome para o repertorio e clicar em implantar:
 
 ![image](https://github.com/AlexandreMatos1/projeto-integrador-/assets/152565845/c8006e22-a3b3-4956-8623-c2e1625fc137)
 
-É assim o seu projeto está implementado e online: ;)
+É assim o seu projeto está implantado e online: ;)
 
 ![image](https://github.com/AlexandreMatos1/projeto-integrador-/assets/152565845/1af520fb-3bad-4f9f-9123-29dc392dce4c)
 
