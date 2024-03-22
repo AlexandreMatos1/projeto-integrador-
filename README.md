@@ -30,7 +30,7 @@ O sistema permite o cadastro de novos alunos, a verificação de suas informaç�
 
 # Pessoas Desenvolvedoras do Projeto
 
-# Autores
+# Autor
 
 | [<img loading="lazy" src="https://github.com/AlexandreMatos1/projeto-integrador-/assets/152565845/9480bc93-b846-4e9d-ad06-10049e563f56" width=115><br><sub>Alexandre Matos</sub>](https://github.com/AlexandreMatos1/projeto-integrador-/assets/152565845/9480bc93-b846-4e9d-ad06-10049e563f56) |   
 
