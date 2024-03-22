@@ -6,7 +6,7 @@
 
 * [Título e Imagem de capa](#Título-e-Imagem-de-capa)
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
+* [Funcionalidades do Projeto](#funcionalidades-do-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
 
@@ -16,4 +16,11 @@ Projeto desenvolvido como objetivo final do curso de Python da CyberEdux. O appE
 
 O sistema permite o cadastro de novos alunos, a verificação de suas informações, tais como: email, data de nascimento, telefone e o curso em que está cadastrado. Assim como tambem é possivel editar suas notas e suas informações.
 
-#Funcionalidades e demonstração da aplicação
+# :hammer: Funcionalidades do Projeto
+
+- `Funcionalidade 1`: Cadastrar Novo Aluno
+- `Funcionalidade 2`: Editar Aluno
+- `Funcionalidade 3`: Deletar Aluno
+- `Funcionalidade 4`: Ver Notas do Aluno
+
+
