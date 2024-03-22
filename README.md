@@ -19,7 +19,7 @@ O sistema permite o cadastro de novos alunos, a verificação de suas informaç�
 # :hammer: Funcionalidades do Projeto
 
 - `Funcionalidade 1`: Cadastrar Novo Aluno
-- `Funcionalidade 2`: Editor Aluno
+- `Funcionalidade 2`: Edit@r Aluno
 - `Funcionalidade 3`: Deletar Aluno
 - `Funcionalidade 4`: Ver Notas do Aluno
 
